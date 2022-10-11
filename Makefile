@@ -6,7 +6,7 @@ build:
 	@virtualenv --relocatable support
 
 test:
-	@PYTHONPATH=. support/bin/nosetests --with-xunit -vdw test
+	@PYTHONPATH=. bin/nosetests --with-xunit -vdw test
 
 dist: test
 	@test -d dist || mkdir dist
